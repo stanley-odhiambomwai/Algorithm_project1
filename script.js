@@ -18,14 +18,19 @@ function analyzeSentence(sentence) {
 
        
         if (vowels.indexOf(char) !== -1) {
+
             vowelCount++;
         }
 
         if (char === ' ' || i === sentence.length - 1) {
+
             if (char !== ' ') {
-                wordCount++;  // Last word after the final character
+             
+                wordCount++;  
             }
-            if (i !== sentence.length - 1 && sentence[i+1] !== ' ') {
+            if (i !== sentence.length - 1 && sentence[i+1] !== ' ') 
+                {
+
                 wordCount++;
             }
         }
@@ -33,6 +38,7 @@ function analyzeSentence(sentence) {
 
     
     if (sentence[sentence.length - 1] === '.') {
+        
         sentence = sentence.slice(0, sentence.length - 1);
     }
 
